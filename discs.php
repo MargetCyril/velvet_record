@@ -30,6 +30,7 @@ $requete->closeCursor();
             <tr><td><?= $disc->disc_genre?></td></tr>
             <tr><td><a href="disc_detail.php?id=<?= $disc->disc_id?>"><button>Détail</button></a></td>
         </table>
+        
     <?php endforeach; ?>
    
 </body>

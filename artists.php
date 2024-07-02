@@ -29,6 +29,7 @@ $requete->closeCursor();
             <td><?= $artist->artist_name ?></td>
             <td><a href="artist_detail.php?id=<?= $artist->artist_id ?>">Détail</a></td>
         </tr>
+        
         <?php endforeach; ?>
 
     </table>
