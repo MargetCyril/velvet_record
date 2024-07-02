@@ -28,6 +28,7 @@
         echo "disque inconnu à cette adresse";
         exit;
         }
+        
         ?>
 
         <form action ="script_artist_modif.php" method="post">
