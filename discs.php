@@ -17,12 +17,14 @@ $requete->closeCursor();
 </head>
 <body>
     
-<h1> Liste des disques (<?= $disc->disc_id?>) </h1>
+<h1> Liste des disques  (<?= count($tableau) ?>) </h1>
+
+<a href="disc_new.php?"><button>Ajout</button></a>
 
     <?php foreach ($tableau as $disc): ?>
         
         <table>
-            <tr><td rowspan=7 ><img src="/jaquettes/<?=$disc->disc_picture?>" style="width: 50%"></td></tr>
+            <tr><td rowspan=7 ><img src="/jaquettes/<?=$disc->disc_picture?>" style="width: 250px"></td></tr>
             <tr><td><?= $disc->disc_title?></td></tr>
             <tr><td><?= $disc->artist_name?></td></tr>
             <tr><td><?= $disc->disc_label?></td></tr>
